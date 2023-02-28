@@ -1,0 +1,19 @@
+{
+  "cwd": "/Users/sammy/Documents/jailbreaks/Topaz",
+  "type": [
+    "web"
+  ],
+  "name": "Topaz",
+  "framework": "svelte",
+  "template": "tabs",
+  "cssPreProcessor": false,
+  "bundler": "vite",
+  "theming": {
+    "customColor": false,
+    "color": "#007aff",
+    "darkTheme": false,
+    "iconFonts": true,
+    "fillBars": false
+  },
+  "customBuild": false
+}
