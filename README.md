@@ -1,6 +1,6 @@
 # Topaz
 
-get started by doing: 
+Get started by doing: ```git clone https://github.com/piggydoe/Topaz.git {Directory}```
 
 When running npm install you may get a big error, ignore it and run the following: ```npm i --legacy-peer-deps``` it's never good practice but it solves the issue :)
 
