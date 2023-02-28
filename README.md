@@ -1,5 +1,7 @@
 # Topaz
 
+When running npm install you may get a big error, ignore it and run the following: ```npm i --legacy-peer-deps``` it's never good practice but it solves the issue :)
+
 ## Framework7 CLI Options
 
 Framework7 app created with following options:
