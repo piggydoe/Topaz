@@ -30,35 +30,34 @@
 
   // Framework7 Parameters
   let f7params = {
-    name: 'Topaz', // App name
+    name: 'Cydia', // App name
     theme: 'ios',
     // App store
     store: store,
     // App routes
     routes: routes,
   };
+
+  let link = "/badlink/"
 </script>
 
 <App { ...f7params } >
 
 
   <!-- Views/Tabs container -->
-  <Views tabs class="safe-areas">
+  <Views tabs>
     <!-- Tabbar for switching views-tabs -->
     <Toolbar tabbar labels bottom>
-      <Link tabLink="#view-home" tabLinkActive iconIos="f7:house_fill" text="Home" />
-      <Link tabLink="#view-app" iconIos="f7:layers_alt_fill" text="Apps" />
-      <Link tabLink="#view-settings" iconIos="f7:gear" text="Settings" />
+      <Link tabLink="#view-home" tabLinkActive iconIos="f7:star_fill" text="Cydia" />
+      <Link tabLink={link} iconIos="f7:rectangle_stack" text="Sources" />
+      <Link tabLink={link} iconIos="f7:clock" text="Changes" />
+      <Link tabLink={link} iconIos="f7:arrow_down_circle" text="Installed" />
+      <Link tabLink={link} iconIos="f7:search" text="Search" />
     </Toolbar>
 
     <!-- Your main view/tab, should have "view-main" class. It also has "tabActive" prop -->
     <View id="view-home" main tab tabActive url="/" />
 
-    <!-- Catalog View -->
-    <View id="view-app" name="apps" tab url="/apps/" />
-
-    <!-- Settings View -->
-    <View id="view-settings" name="settings" tab url="/settings/" />
 
   </Views>
 </App>
